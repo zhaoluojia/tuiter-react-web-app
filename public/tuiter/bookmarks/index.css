@@ -1,0 +1,150 @@
+body {
+  font-family: "Arial";
+  background-color: black;
+  color: white;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-title {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.wd-small {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: normal;
+  color: lightgray;
+}
+
+.wd-title-position {
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.wd-three-dots {
+  font-size: 20px;
+  position: relative;
+  float: right;
+  margin-right: 12px;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin-top: 12px;
+  background:lightgray;
+}
+
+.wd-avatar {
+  margin-left: 16px;
+  margin-top: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.wd-rounded-corners-top-around {
+  border-style: solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-left: 12px;
+  width: 504px;
+  height: 264px;
+}
+
+.wd-rounded-corners-bottom-around {
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-left: 12px;
+  width: 504px;
+}
+
+.wd-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 504px;
+  height: 264px;
+}
+
+.wd-text-title {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  margin: 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wd-text-content {
+  padding: 12px;
+  margin: 0px;
+  font-size: 15px;
+  color: lightgray;
+}
+
+h2 {
+  margin: 12px;
+  font-size: 15px;
+  font-weight: normal;
+  width: 506px;
+}
+
+.wd-bold {
+  font-weight: bold;
+}
+
+.wd-light-gray {
+  color: lightgray;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-right-grid{
+  position: relative;
+  float: left;
+}
+
+.wd-blue {
+  color: blue;
+}
+
+.wd-icon-number-space {
+  margin-right: 12px;
+}
+
+.wd-icons-margin {
+  margin-left: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 504px;
+}
+
+.wd-icons-space-between {
+  width: 25%;
+  float: left;
+}
+
+.wd-red {
+  color: red;
+}
+
+.grid-row {
+  clear: both;
+  display: flex;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
