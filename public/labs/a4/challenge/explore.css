@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+}
+
+.wd-search-bar {
+  background-color: #202020;
+  border-color: #202020;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.wd-search-tuiter {
+  bottom: 10px;
+  left: 45px;
+  color: grey;
+}
+
+.wd-cog {
+  color: white;
+  margin-right: 16px;
+}
+
+.wd-text-in-img1 {
+  bottom: 80px;
+  left: 16px;
+  font-size: small;
+}
+
+.wd-text-in-img2 {
+  bottom: 3px;
+  left: 16px;
+}
+
+.wd-saturn-size {
+  height: 40px;
+}
+
+.wd-font-bold {
+  font-weight: bold;
+}
+
+.wd-more-icon {
+  top: 3px;
+  left: 2px;
+}
+
+.wd-list-group-item-color {
+  background-color: black;
+  color: lightgray;
+}
+
+.wd-list-group-item-color2 {
+  background-color: #202020;
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.wd-list-group-icon-style {
+  margin-right: 10px;
+}
+
+.wd-flag-size {
+  height: 25px;
+}
+
+.wd-img-small {
+  height: 15px;
+}
+
+.wd-button-style {
+  font-weight: bold;
+  background-color: white;
+}
+
+.wd-list-group-rounded {
+  border-radius: 20px;
+}
+
+.wd-font-small {
+  font-size: small;
+}
+
+.wd-text-style {
+  font-size: small;
+  margin-right: 10px;
+}
+
+.wd-color-blue {
+  color: #00acee;
+}
+
+.wd-color-grey {
+  color: grey;
+}
+
+.wd-nav {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.wd-nav-selected {
+  color: white;
+  font-weight: bold;
+  border-bottom: solid 3px #00acee;
+}
+
+.wd-twitter-button-style {
+  background-color: #00acee;
+  color: white;
+}
+
+.wd-main-content {
+  border-left: solid grey 1px;
+  border-right: solid grey 1px;
+}
+
+.wd-img {
+  border-top: solid grey 1px;
+  border-bottom: solid grey 1px;
+}
+
+.wd-col-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wd-text-lightgray {
+  color: lightgray;
+}
