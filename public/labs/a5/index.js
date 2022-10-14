@@ -1,8 +1,9 @@
+/* eslint-env jquery */
 // alert('Hello World!');
 console.log('Hello World!');
 
 console.log('Variables and Constants');
-global1 = 10;
+let global1 = 10;
 var functionScoped = 2;
 let blockScoped = 5;
 const constant1 = global1

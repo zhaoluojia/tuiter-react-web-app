@@ -1,4 +1,4 @@
-const PostItem = (post) => {
+const PostItem = (post, index) => {
   return (`
     <li class="list-group-item pb-3 pt-3 border-bottom border-secondary">
       <div class="row">
@@ -12,14 +12,25 @@ const PostItem = (post) => {
           <span> · ${post.time}</span>
           <i class="fas fa-ellipsis-h float-end" style="color: gray"></i>
           <div style="color: white">${post.comment}</div>
-          <img src="${post.image}" class="mt-2 border border-secondary wd-rounded-top-frame img-fluid">
-          <div class="p-3 mb-2 border border-secondary wd-rounded-bottom-frame" height="100px">
-            <div style="color: white">${post.title}</div>
-            <div>${post.content}</div>
+          <img src="${post.image}" class="mt-2 border border-secondary wd-rounded-top-frame img-fluid" id="image-${index}">
+          
+          <div class="p-3 border border-secondary wd-rounded-bottom-frame" height="100px" id="content-box-${index}">
+            <div style="color: white" id="post-title-${index}">${post.title}</div>
+            <div id="post-content-${index}">${post.content}</div>
             <i class="fas fa-link"></i>
-            <span> ${post.link}</span>
+            <span id="post-link-${index}"> ${post.link}</span>
           </div>
-          <div class="row">
+          
+          <script>
+            if($.trim($("#post-title-${index}").html())=='' 
+              && $.trim($("#post-content-${index}").html())=='' 
+              && $.trim($("#post-link-${index}").html())=='') {
+              $('#content-box-${index}').addClass("d-none");
+              $('#image-${index}').addClass("wd-rounded-bottom-frame");
+            }
+          </script>
+          
+          <div class="row mt-2">
             <div class="col col-3">
               <i class="far fa-comment"></i>
               <span class="ms-2">${post.reply}</span>
@@ -42,3 +53,6 @@ const PostItem = (post) => {
   `)
 }
 export default PostItem;
+
+
+

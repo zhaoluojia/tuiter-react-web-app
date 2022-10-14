@@ -4,8 +4,8 @@ import PostItem from "./PostItem.js";
 const PostList = () => {
   return(`
       ${
-        posts.map(post => {
-          return(PostItem(post));
+        posts.map((post, index) => {
+          return(PostItem(post, index));
         }).join('')
       }
   `);
