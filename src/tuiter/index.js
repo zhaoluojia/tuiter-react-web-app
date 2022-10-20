@@ -2,9 +2,11 @@ import React from "react";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
+import HomeComponent from "./home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "bootswatch/dist/cyborg/bootstrap.min.css";
+import {Routes, Route} from "react-router";
 
 function Tuiter() {
   return (
@@ -14,7 +16,11 @@ function Tuiter() {
         </div>
         <div className="col-10 col-md-10 col-lg-7 col-xl-6"
              style={{"position": "relative"}}>
-          <ExploreComponent/>
+          <Routes>
+            <Route index element={<HomeComponent/>}/>
+            <Route path="home" element={<HomeComponent/>}/>
+            <Route path="explore" element={<ExploreComponent/>}/>
+          </Routes>
         </div>
         <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
           <WhoToFollowList/>
