@@ -1,5 +1,6 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
+import {Link} from "react-router-dom";
 import "./index.css";
 
 const ExploreComponent = () => {
@@ -16,23 +17,23 @@ const ExploreComponent = () => {
         </div>
         <ul className="nav nav-tabs mb-2">
           <li className="nav-item">
-            <a className="nav-link active">For You</a>
+            <Link className="nav-link active">For You</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Trending</a>
+            <Link className="nav-link">Trending</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">News</a>
+            <Link className="nav-link">News</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Sports</a>
+            <Link className="nav-link">Sports</Link>
           </li>
           <li className="nav-item d-none d-md-block">
-            <a className="nav-link">Entertainment</a>
+            <Link className="nav-link">Entertainment</Link>
           </li>
         </ul>
         <div className="position-relative mb-2">
-          <img src="/images/starship.png" className="w-100"/>
+          <img alt="" src="/images/starship.png" className="w-100"/>
           <h2 className="position-absolute wd-text-in-img">
             SpaceX's Starship</h2>
         </div>

@@ -16,7 +16,7 @@ const PostItem = (
       <li className="list-group-item pb-3 pt-3 border-bottom border-secondary bg-black">
         <div className="row">
           <div className="col-2 col-xxl-1 col-xl-2 col-lg-2 col-md-2 col-sm-2">
-            <img className="rounded-circle" height={50} src={`/images/${post.avatarIcon}`}></img>
+            <img alt="" className="rounded-circle" height={50} src={`/images/${post.avatarIcon}`}></img>
           </div>
           <div className="col-10 col-xxl-11 col-xl-10 col-lg-10 col-md-10 col-sm-10">
             <span className="fw-bolder me-1" style={{color:'white'}}>{post.userName}</span>
@@ -25,7 +25,7 @@ const PostItem = (
             <span> · {post.time}</span>
             <span className="float-end"><BsThreeDots /></span>
             <div style={{color:'white'}}>{Parser(post.comment)}</div>
-            <img className="mt-2 border border-secondary wd-rounded-top-frame img-fluid" src={`/images/${post.image}`}>
+            <img alt="" className="mt-2 border border-secondary wd-rounded-top-frame img-fluid" src={`/images/${post.image}`}>
             </img>
             <div className="p-3 border border-secondary wd-rounded-bottom-frame" height={100}>
               <div className="fw-bolder" style={{color:'white'}}>{post.title}</div>
