@@ -14,9 +14,9 @@ const NavigationSidebar = () => {
   return (
       <div>
         <div className="list-group">
-          <a className="list-group-item">
+          <Link className="list-group-item">
             <FaTwitter />
-          </a>
+          </Link>
           <Link to="/tuiter/home" className={`list-group-item list-group-item-action ${active === 'home' || active === '' ?'active':''}`}>
             <FaHome />
             <div className="d-none d-xl-inline ms-1">Home</div>
@@ -55,9 +55,9 @@ const NavigationSidebar = () => {
           </Link>
         </div>
         <div className="d-grid mt-2">
-          <a className="btn btn-primary btn-block rounded-pill">
+          <Link className="btn btn-primary btn-block rounded-pill">
           Tweet
-          </a>
+          </Link>
         </div>
       </div>
   );
