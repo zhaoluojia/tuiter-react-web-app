@@ -45,7 +45,7 @@ const NavigationSidebar = () => {
             <IoListSharp />
             <div className="d-none d-xl-inline ms-1">Lists</div>
           </Link>
-          <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${active === 'profile'?'active':''}`}>
+          <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${active === 'profile' || active === 'edit-profile' ?'active':''}`}>
             <CgProfile />
             <div className="d-none d-xl-inline ms-1">Profile</div>
           </Link>
