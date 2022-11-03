@@ -25,7 +25,7 @@ const profileSlice = createSlice({
   reducers: {
     updateProfile(state, action) {
       const userprofile = state.find(
-          (userprofile) =>
+          () =>
               action.payload != null
       )
       console.log(action.payload.firstName)
