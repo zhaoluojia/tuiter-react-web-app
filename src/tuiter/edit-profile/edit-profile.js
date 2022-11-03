@@ -11,6 +11,7 @@ const EditProfile = (
 ) => {
   const [userProfile, setProfile] = useState({
     firstName: profile.firstName,
+    lastName: profile.lastName,
     bio: profile.bio,
     location: profile.location,
     website: profile.website,
@@ -22,9 +23,11 @@ const EditProfile = (
   }
   const nameChangeHandler = (event) => {
     const nameValue = event.target.value;
+    const nameArray = nameValue.split(" ");
     const newName = {
       ...userProfile,
-      firstName: nameValue
+      firstName: nameArray.slice(0, -1).join(" "),
+      lastName: nameArray.slice(-1).toString()
     };
     setProfile(newName);
   }
@@ -91,7 +94,7 @@ const EditProfile = (
         <label>Name
           <input className="form-control border-0"
                  onChange={nameChangeHandler}
-                 defaultValue={profile.firstName}
+                 defaultValue={profile.firstName + " " + profile.lastName}
           />
         </label>
         <label className="mt-4">Bio

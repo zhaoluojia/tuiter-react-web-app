@@ -28,9 +28,13 @@ const profileSlice = createSlice({
           (userprofile) =>
               action.payload != null
       )
+      console.log(action.payload.firstName)
+      console.log(action.payload.lastName)
       if (action.payload.firstName != null) {
         userprofile.firstName = action.payload.firstName
-        userprofile.handle = action.payload.firstName
+        userprofile.lastName = action.payload.lastName
+        userprofile.handle = action.payload.firstName.replaceAll(" ", "").toLowerCase()
+            + action.payload.lastName.toLowerCase()
       }
       if (action.payload.bio != null) {
         userprofile.bio = action.payload.bio
