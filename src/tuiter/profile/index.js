@@ -3,12 +3,13 @@ import {useSelector} from "react-redux";
 import Profile from "./profile";
 
 const ProfileComponent = () => {
-  const profileArray = useSelector((state) => state.profile);
+  const profileData = useSelector((state) => state.profile);
   return(
       <>
         {
-          profileArray.map(profile =>
+          profileData.map(profile =>
               <Profile
+                  key={profile._id}
                   profile={profile}/>
           )
         }

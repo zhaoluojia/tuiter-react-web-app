@@ -3,12 +3,13 @@ import {useSelector} from "react-redux";
 import EditProfile from "./edit-profile";
 
 const EditProfileComponent = () => {
-  const profileArray = useSelector((state) => state.profile);
+  const profileData = useSelector((state) => state.profile);
   return(
       <>
         {
-          profileArray.map(profile =>
+          profileData.map(profile =>
               <EditProfile
+                  key={profile._id}
                   profile={profile}/>
           )
         }
