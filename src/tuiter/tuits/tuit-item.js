@@ -2,14 +2,14 @@ import React from "react";
 import {BsCheckCircleFill} from "react-icons/bs";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {tuit}
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return(
       <li className="list-group-item pb-3 pt-3 border border-secondary bg-black">
@@ -20,7 +20,7 @@ const TuitItem = (
           <div className="col-9 col-xxl-10 col-xl-9 col-lg-9 col-md-9 col-sm-9">
             <span className="fw-bolder me-1" style={{color:'white'}}>{tuit.userName}</span>
             <span style={{color:'white'}}><BsCheckCircleFill /></span>
-            <span className="ms-1">@{tuit.handle}</span>
+            <span className="ms-1">{tuit.handle}</span>
             <span> · {tuit.time}</span>
             <i className="bi bi-x-lg float-end"
                onClick={() => deleteTuitHandler(tuit._id)}></i>
