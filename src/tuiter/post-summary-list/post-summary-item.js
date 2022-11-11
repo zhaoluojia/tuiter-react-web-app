@@ -8,11 +8,11 @@ const PostSummaryItem = (
       <li className="list-group-item">
         <div className="row">
           <div className="col-10">
-            <div class="text-secondary">{post.topic}</div>
+            <div className="text-secondary">{post.topic}</div>
             <div>
               <span className="fw-bold me-1">{post.userName}</span>
               <BsCheckCircleFill />
-              <span class="text-secondary"> · {post.time}</span>
+              <span className="text-secondary"> · {post.time}</span>
             </div>
             <div className="fw-bold">{post.title}</div>
           </div>
