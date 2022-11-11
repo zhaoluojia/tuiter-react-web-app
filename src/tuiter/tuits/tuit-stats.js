@@ -25,14 +25,14 @@ const TuitStats = (
           likes: tuit.likes + 1
         }))} className="bi bi-heart-fill me-2 text-danger"></i>
       </div>
-      <div className="col col-3">
+      <div className="col col-4">
         Dislikes: {tuit.dislikes}
         <i onClick={() => dispatch(updateTuitThunk({
           ...tuit,
           dislikes: tuit.dislikes + 1
         }))} className="bi bi-hand-thumbs-down-fill me-2"></i>
       </div>
-      <div className="col col-2">
+      <div className="col col-1">
         <RiShareBoxFill />
       </div>
     </div>
